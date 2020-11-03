@@ -6,10 +6,14 @@ feature 'testing feature test works' do
   end
 end
 
+#As a time-pressed user
+#So that I can quickly go to web sites I regularly visit
+#I would like to see a list of bookmarks
+
 feature 'view bookmark' do
   scenario 'allow user to see bookmark' do
     visit('/bookmarks')
-    
+
     expect(page).to have_content 'http://www.makersacademy.com'
     expect(page).to have_content 'http://www.destroyallsoftware.com'
     expect(page).to have_content 'http://www.google.com'
@@ -18,4 +22,5 @@ end
 
 #As a time-pressed user
 #So that I can quickly go to web sites I regularly visit
-#I would like to see a list of bookmarks
+#I would like to add the site's address and title to bookmark manager
+

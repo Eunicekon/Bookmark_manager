@@ -5,6 +5,8 @@ The project
 
 * To run project => rackup
 * To install dependencies => bundle
+* Database used => postgreSQL (list all database = postgres=# \l
+                                quit psql = postgres=# \q  )
 
 You're going to build a bookmark manager. A bookmark manager is a website to maintain a collection of bookmarks (URLs).
 
@@ -28,6 +30,12 @@ WEBSITE SPECIFICATIONS:
 
 user story 1.
 ===============
-As a bookmark manager,
-So that I manage my bookmarks,
-I'd like to be shown a list of bookmarks.
+#As a bookmark manager,
+#So that I manage my bookmarks,
+#I'd like to be shown a list of bookmarks.
+
+user story 2.
+=================
+#As a time-pressed user
+#So that I can quickly go to web sites I regularly visit
+#I would like to add the site's address and title to bookmark manager

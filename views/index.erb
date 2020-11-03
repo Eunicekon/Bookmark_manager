@@ -1,3 +1,5 @@
-'http://www.makersacademy.com'
-'http://www.destroyallsoftware.com'
-'http://www.google.com'
+<ul>
+  <% @bookmarks.each do |x| %>
+    <li><%= x %></li>
+  <% end %>
+</ul>
