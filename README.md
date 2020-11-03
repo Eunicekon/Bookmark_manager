@@ -7,6 +7,13 @@ The project
 * To install dependencies => bundle
 * Database used => postgreSQL (list all database = postgres=# \l
                                 quit psql = postgres=# \q  )
+To set-up Database:
+=====================
+  Connect to psql
+  Create the database using the psql command CREATE DATABASE bookmark_manager;
+  Connect to the database using the pqsl command \c bookmark_manager;
+  Run the query saved in the file 01_create_bookmarks_table.sql
+
 
 You're going to build a bookmark manager. A bookmark manager is a website to maintain a collection of bookmarks (URLs).
 
