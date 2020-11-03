@@ -1,9 +1,19 @@
 require 'sinatra/base'
+require './lib/bookmarkManager' #this is the same as requiring in the terminal when we do feature tests
 
 class BookmarkManager < Sinatra::Base
 
   get '/' do
-    'Testing if working!'
+    'Welcome to Bookmark Manager'
+  end 
+
+  get '/bookmarks' do
+    @bookmarks = [
+      'http://www.makersacademy.com',
+      'http://www.destroyallsoftware.com',
+      'http://www.google.com',   
+    ]
+    erb :'index'
   end
 
   # start the server if ruby file executed directly
