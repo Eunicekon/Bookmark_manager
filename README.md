@@ -3,6 +3,9 @@ The project
 =================
 ------> Learning Objectives: Generate User Stories from Requirements<---------
 
+-- Project Image: --
+<img src="image/bookmark_manager.png" width="300" height="300">
+
 * To run project => rackup
 * To install dependencies => bundle
 
