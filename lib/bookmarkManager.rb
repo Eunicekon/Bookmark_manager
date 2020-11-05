@@ -2,7 +2,7 @@ require 'pg'
 
 class Bookmark
 
-  def see_all_bookmarks
+  def self.all
     if ENV['ENVIRONMENT'] == 'test'
       connection = PG.connect(dbname: 'bookmark_manager_test')
     else
@@ -10,7 +10,7 @@ class Bookmark
     end
 
     result = connection.exec("SELECT * FROM bookmarks") 
-    p result
+    # p result
     result.map { |bookmark| bookmark['url'] }
   end
 end

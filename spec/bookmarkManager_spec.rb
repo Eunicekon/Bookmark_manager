@@ -11,7 +11,7 @@ RSpec.describe Bookmark do
         connection.exec("INSERT INTO bookmarks (url) VALUES('http://www.destroyallsoftware.com');")
         connection.exec("INSERT INTO bookmarks (url) VALUES('http://www.google.com');")
 
-      expect(subject.see_all_bookmarks).to include(
+      expect(Bookmark.all).to include(
       "http://www.makersacademy.com",
       "http://www.destroyallsoftware.com",
       "http://www.google.com")
