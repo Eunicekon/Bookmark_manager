@@ -10,13 +10,14 @@ end
 #So that I can quickly go to web sites I regularly visit
 #I would like to see a list of bookmarks
 
+#As a time-pressed user
+#So that I can quickly go to web sites I regularly visit
+#I would like to add the site's address and title to bookmark manager
+
 feature 'view bookmark' do
   scenario 'allow user to see bookmark' do
     connection = PG.connect(dbname: 'bookmark_manager_test')
 
-    
-
-    # Add the test data
     connection.exec("INSERT INTO bookmarks VALUES(1, 'http://www.makersacademy.com');")
     connection.exec("INSERT INTO bookmarks VALUES(2, 'http://www.destroyallsoftware.com');")
     connection.exec("INSERT INTO bookmarks VALUES(3, 'http://www.google.com');")
@@ -29,7 +30,10 @@ feature 'view bookmark' do
   end
 end
 
-#As a time-pressed user
-#So that I can quickly go to web sites I regularly visit
-#I would like to add the site's address and title to bookmark manager
+#As a user
+#So I can store bookmark data for later retrieval
+#I want to add a bookmark to Bookmark Manager
+
+
+
 

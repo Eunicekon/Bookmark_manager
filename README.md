@@ -50,14 +50,23 @@ WEBSITE SPECIFICATIONS:
 - Filter bookmarks by tag
 - Users are restricted to manage only their own bookmarks
 
+OOD Design:
+================
+<img src="OOD_Diagram.png" width="200" height="200">
+
 user stories:
 =================== 
-1.
+1. 
 #As a bookmark manager,
 #So that I manage my bookmarks,
 #I'd like to be shown a list of bookmarks.
 
-2.
+2. 
 #As a time-pressed user
 #So that I can quickly go to web sites I regularly visit
 #I would like to add the site's address and title to bookmark manager
+
+3. 
+As a user
+So I can store bookmark data for later retrieval
+I want to add a bookmark to Bookmark Manager
