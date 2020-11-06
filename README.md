@@ -52,7 +52,7 @@ WEBSITE SPECIFICATIONS:
 
 OOD Design:
 ================
-<img src="OOD_Diagram.png" width="200" height="200">
+<img src="OOD_Diagram.png" width="300" height="300">
 
 user stories:
 =================== 
